@@ -33,12 +33,9 @@ class Order(db.Model):
     book_id = db.Column(db.Integer, db.ForeignKey('Book.book_id'))
     quantity = db.Column(db.Integer)
 
-<<<<<<< HEAD
-=======
     def __str__(self):
         return f'{self.title} {self.author_firstName} {self.author_lastName} {self.genre} {self.price} {self.image}'
 
->>>>>>> temp
 
 Franeknstein = Book(title="Frankenstein", author_firstName = "Mary", author_lastName = "Shelley", genre = "Horror", price = "30.00", image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Frankenstein_1818_edition_title_page.jpg/220px-Frankenstein_1818_edition_title_page.jpg')
 Neuromancer = Book(title="Neuromancer", author_firstName = "William", author_lastName = "Gibson", genre = "Science Fiction", price = "18.00", image = 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Neuromancer_%28Book%29.jpg/220px-Neuromancer_%28Book%29.jpg')
