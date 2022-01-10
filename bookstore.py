@@ -37,12 +37,19 @@ class Order(db.Model):
         return f'{self.title} {self.author_firstName} {self.author_lastName} {self.genre} {self.price} {self.image}'
 
 
+#db.create_all()
+
 Franeknstein = Book(title="Frankenstein", author_firstName = "Mary", author_lastName = "Shelley", genre = "Horror", price = "30.00", image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Frankenstein_1818_edition_title_page.jpg/220px-Frankenstein_1818_edition_title_page.jpg')
 Neuromancer = Book(title="Neuromancer", author_firstName = "William", author_lastName = "Gibson", genre = "Science Fiction", price = "18.00", image = 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4b/Neuromancer_%28Book%29.jpg/220px-Neuromancer_%28Book%29.jpg')
 Nineteen_Eighty_Four = Book(title="1984", author_firstName = "George", author_lastName = "Orwell", genre = "Dystopian", price = "20.00", image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/1984first.jpg/220px-1984first.jpg')
 FullmetalAlchemist_Volumne1 = Book(title="Fullmetal Alchemist Volume 1", author_firstName = "Hiromu", author_lastName = "Arakawa", genre = "Manga", price = "6.25", image = 'https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Fullmetal123.jpg/220px-Fullmetal123.jpg')
 Dracula = Book(title="Dracula", author_firstName = "Bram", author_lastName = "Stoker", genre = "Horror", price = "15.00", image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dracula_1st_ed_cover_reproduction.jpg/220px-Dracula_1st_ed_cover_reproduction.jpg')
 
+#db.session.add(Franeknstein)
+#db.session.add(Neuromancer)
+#db.session.add(Nineteen_Eighty_Four)
+#db.session.add(FullmetalAlchemist_Volumne1)
+#db.session.add(Dracula)
 
 def serialize_books(Book):
     return {
